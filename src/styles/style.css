@@ -65,10 +65,11 @@ main .info p {
 main .info .btn-register {
   font: 400 1.8rem var(--body);
   background-color: #fff;
-  color: var(--soft-magenta);
+  color: rgb(78, 67, 67);
   border-radius: 25px;
   padding: 1.1rem 5.5rem;
   transition: 0.4s ease-in-out;
+  box-shadow: 8px 5px 5px rgb(78, 67, 67);
 }
 
 main .info .btn-register:hover {
