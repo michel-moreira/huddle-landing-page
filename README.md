@@ -144,13 +144,15 @@ body {
 - a criação de um arquivo que torne a estilização adaptativa (responsividade) tanto em navegadores via desktop, tablet ou smartphones;
 
 ```css
-@media (max-width: 425px) {
+@media (max-width: 1024px) {
   .container {
-    width: 100%;
     display: flex;
     flex-direction: column;
-    padding: 3.4rem;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
     background: url(../images/bg-mobile.svg) top center no-repeat var(--violet);
+    width: 100%;
   }
 }
 ```
