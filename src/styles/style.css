@@ -1,13 +1,19 @@
+html,
 body {
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
   flex-direction: column;
+}
+
+body {
   background: var(--violet) url(../images/bg-desktop.svg) center center
     no-repeat;
-  background-size: contain;
+  background-size: cover;
   max-width: 1440px;
   padding: 0 2rem;
+  margin: 0;
+  min-height: 100vh;
 }
 
 /* =================== */
@@ -69,9 +75,9 @@ main {
   font: 400 1.2rem var(--body);
   background-color: #fff;
   color: var(--violet);
-  border-radius: 25px;
+  border-radius: 2.5rem;
   padding: 1rem 4rem;
-  transition: 0.4s ease-in-out;
+  transition: 0.3s ease-in-out;
   box-shadow: 3px 5px 10px hsl(300, 58%, 25%);
 }
 
