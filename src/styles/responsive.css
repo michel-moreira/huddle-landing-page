@@ -1,17 +1,21 @@
-@media (max-width: 1024px) {
-  .container {
+@media (max-width: 768px) {
+  body {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 2rem;
     background: url(../images/bg-mobile.svg) top center no-repeat var(--violet);
     width: 100%;
+    background-size: contain;
+    padding: 0 2.8rem;
   }
+
+  /* =========================== */
 
   .header {
     width: 100%;
-    margin: 0 0 6rem 1.9rem;
+    margin: 4rem 0 2rem 0;
+    padding: 0;
     display: flex;
     justify-content: flex-start;
   }
@@ -20,56 +24,173 @@
     width: 130px;
   }
 
+  /* =========================== */
+
   main {
     display: flex;
-    flex-direction: column;
+    justify-content: center;
     align-items: center;
-    margin-bottom: 2rem;
+    padding: 0;
   }
 
-  main .image-card {
+  /* --------------------------- */
+
+  .product-presentation {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+  }
+
+  .product-presentation .image-card {
     max-width: 100%;
-    padding: 0 1.8rem;
+    margin: 0;
   }
 
-  main .info {
+  .product-presentation .info {
     display: flex;
     align-items: center;
     flex-direction: column;
     text-align: center;
     width: 100%;
-    margin: 4.8rem auto 0;
-    padding: 10px;
+    margin: 2rem 0 0;
+    padding: 0;
   }
 
-  main .info .heading {
-    font: 2.3rem/3.9rem var(--heading);
+  .product-presentation .info .heading {
+    font: 600 1.4rem/1.5 var(--heading);
     margin: 0 0 1rem;
     letter-spacing: 1px;
   }
 
-  main .info p {
-    font: 400 1.6rem/24px var(--body);
+  .product-presentation .info p {
+    font: 400 1rem/1.5 var(--body);
     text-align: center;
     margin: 0 0 2.5rem;
-    padding: 0 0.5rem 0;
+    padding: 0;
   }
 
-  main .info .btn-register {
-    font-size: 1.4rem;
+  .product-presentation .info .btn-register {
+    font-size: 1rem;
     width: 200px;
   }
 
-  .footer .social-media {
+  /* =========================== */
+
+  .c-footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 1rem 2rem 0 2rem;
+  }
+  .c-footer .social-media {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     margin: 0;
     padding: 18px 30px;
-    gap: 10px;
+    gap: 1rem;
   }
 
-  .footer .social-media a i {
-    font-size: 1.5rem;
+  .c-footer .social-media a i {
+    font-size: 1rem;
+  }
+}
+
+/* ############################## */
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  body {
+    background: url(../images/bg-mobile.svg) top center no-repeat var(--violet);
+    background-size: cover;
+    padding: 0 3rem;
+  }
+
+  /* =========================== */
+
+  .header {
+    width: 100%;
+    margin: 4rem 0 2rem 0;
+    padding: 0;
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  .header .logo {
+    width: 130px;
+  }
+
+  /* =========================== */
+
+  main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 60vh;
+    padding: 0;
+  }
+
+  /* --------------------------- */
+
+  .product-presentation {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+
+  .product-presentation .image-card {
+    max-width: 100%;
+    margin: 0;
+  }
+
+  .product-presentation .info {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    margin: 2rem 0 0;
+    padding: 0;
+  }
+
+  .product-presentation .info .heading {
+    font: 600 1.4rem/1.5 var(--heading);
+    margin: 0 0 1rem;
+    letter-spacing: 1px;
+  }
+
+  .product-presentation .info p {
+    font: 400 1rem/1.5 var(--body);
+    margin: 0 0 2.5rem;
+    padding: 0;
+  }
+
+  .product-presentation .info .btn-register {
+    font-size: 1rem;
+    align-self: flex-start;
+    width: 200px;
+  }
+
+  /* =========================== */
+
+  .c-footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 0 2rem 0 2rem;
+  }
+  .c-footer .social-media {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 0;
+    padding: 18px 30px;
+    gap: 1rem;
+  }
+
+  .c-footer .social-media a i {
+    font-size: 1rem;
   }
 }

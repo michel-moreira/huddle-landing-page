@@ -1,11 +1,47 @@
-* {
+*,
+*::before,
+*::after {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  vertical-align: baseline;
+}
+
+html:focus-within {
+  scroll-behavior: smooth;
+  font-size: 62.5%;
+}
+
+body {
+  max-width: 100%;
+  min-height: 100vh;
+  line-height: 1.5;
+  text-rendering: optimizeSpeed;
 }
 
 a {
   text-decoration: none;
-  color: #000;
 }
 
+ul,
+ol,
+li {
+  list-style: none;
+}
+
+img,
+video,
+audio {
+  display: block;
+  max-width: 100%;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
